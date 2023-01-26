@@ -17,12 +17,12 @@ public class Car {
     public Car(String stamp, String model, String color, String country, double engineVolume, int year, String transmission, String bodyType, String registrationNumber, int numberSeats, String typeTires) {
         this.stamp = (stamp == null || stamp.isBlank() || stamp.isEmpty()) ? " " : stamp;
         this.model = (model == null || model.isEmpty() || model.isBlank()) ? " " : model;
-        this.color = (color == null || color.isEmpty() || color.isBlank()) ? "individual order " : color; // индивидуальный заказ
+        this.color = (color == null || color.isEmpty() || color.isBlank()) ? "individual order!! " : color; // индивидуальный заказ
         this.country = (country == null || country.isEmpty() || country.isBlank()) ? "Сделанно в..." : country;
         this.engineVolume = (engineVolume <= 0 ? 1.5 : engineVolume);
         this.year = (year <= 0) ? 2005 : year;
         this.transmission = transmission == null || transmission.isEmpty() || transmission.isBlank() ? " " : transmission;
-        this.bodyType = bodyType == null || bodyType.isEmpty() || bodyType.isBlank() ? "individual order " : bodyType; // индивидуальный заказ
+        this.bodyType = bodyType == null || bodyType.isEmpty() || bodyType.isBlank() ? "individual order!!! " : bodyType; // индивидуальный заказ
         this.registrationNumber = registrationNumber == null ? "d345j" : registrationNumber;
         this.numberSeats = (numberSeats <= 0) ? 6 : numberSeats;
         this.typeTires = typeTires;
